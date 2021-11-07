@@ -1,4 +1,8 @@
 const express = require('express');
+const connectDB = require('./data/mongodb');
+
+connectDB();
+
 require('./services/passport');
 
 const PORT = process.env.PORT || 5000;
